@@ -1,7 +1,6 @@
 | [Home](index.md) | [Research](research.md) | [Talks](talks.md) | [Awards](awards.md) | [Teaching](teaching.md) |
 
 
-
 ## Papers in Preparation
 1. **Elyes Manai**, and Lilia Sfaxi. NLP Data Augmentation for Low-Resource languages. Submitted.
 
