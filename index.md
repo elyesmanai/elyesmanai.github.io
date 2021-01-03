@@ -14,9 +14,9 @@ add my bio
 
 ## Contact
 
-Emails:  
-Personal:[manai.elye2s@gmail.com](manai.elye2s@gmail.com)
-Professional: [manai.elyes@esen.tn](manai.elyes@esen.tn)
+Emails:
+- Personal:[manai.elye2s@gmail.com](manai.elye2s@gmail.com)
+- Professional: [manai.elyes@esen.tn](manai.elyes@esen.tn)
 
 [![alt text](/images/icons/linkedin.png)](https://www.linkedin.com/in/elyes-man-ai/ "LinkedIn")
 [![alt text](/images/icons/twitter.png)](https://twitter.com/Elyes__Manai "Twitter")
