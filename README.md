@@ -1,4 +1,4 @@
 # My acamedia-focused personal webpage
 
-forked from [Golnoosh Farnadi](https://github.com/gfarnadi)'s [website](gfarnadi.github.io).
-As they say, imitation is the highest form of flattery.
+Original Theme by [Steve Smith](https://github.com/orderedlist)
+forked from [Golnoosh Farnadi](https://github.com/gfarnadi)'s [website](gfarnadi.github.io) because of the nice organization.
