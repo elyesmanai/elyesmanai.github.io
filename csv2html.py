@@ -15,7 +15,7 @@ def load_config(filename):
 
 def wrap_tag(content, tag='p'):
     if tag=="a":
-        return f"<{tag} href={content}> more info <{tag}/>"
+        return f"<{tag} href={content}> more info </{tag}>"
     return f"<{tag}> {content} </{tag}>"
 
 
