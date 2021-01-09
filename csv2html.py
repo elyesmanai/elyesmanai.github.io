@@ -37,7 +37,7 @@ def generate_html_list(filename):
                     #add value to single block (wrapping with tag if exists)
                     formated_string += "{}, ".format(wrap_tag(row[field],config_data[filename][field]) if config_data[filename][field] != "" else row[field])
             #wrap list by li tag
-            if formated_string.strip() != "": generated_list += wrap_tag(formated_string[:-2], "li")
+            if formated_string.strip() != "": generated_list += wrap_tag(formated_string[:-2], "li")+"\n"
     return generated_list
 
 
