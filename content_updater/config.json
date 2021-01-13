@@ -1,9 +1,9 @@
 {
     "talks":{
-        "Event":"strong",
+        "Topic":"strong",
         "Location":"",
         "Date":"",
-        "Topic":"",
+        "Event":"",
         "Link":"a"
     }
 }
