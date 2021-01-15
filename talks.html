@@ -31,20 +31,40 @@
     <div class="wrapper">
       <header>
         <h1><a href="index.html">Elyes Manai</a></h1>
-        
-        
-          <img src="images/me.jpg" alt="Logo" />
-        
+        <img src="images/me.jpg" alt="Logo" />
+        <p>
+          Machine Learning Educator & Consultant <br> 
+          Google Developer Expert in Machine Learning
+        </p>
+      
+        <p class="view">
+          <h3 id="Downloadables" style="margin-bottom: 0.5em">Downloadables</h3>
+          <a href="data/elyes_en_cv.pdf">Resume / CV</a> <br>
+          <a href="data/elyes_statement.pdf">Statement of Purpose</a>
+          <br><br>
 
-        <p>Google Developer Expert in Machine Learning loking to pursue a Ph.D in robustness, fairness and/or efficiency learning in Machine learning.</p>
+          <h3 id="contact" style="margin-bottom: 0.5em">Contact</h3>
+          Personal: <a href="manai.elye2s%40gmail.html">manai.elye2s@gmail.com</a>
+          Professional: <a href="manai.elyes%40esen.html">manai.elyes@esen.tn</a>
+          <br><br>
 
-        
-        <p class="view"><a href="https://github.com/elyesmanai/academia">View the Project on GitHub <small>elyesmanai/academia</small></a></p>
-        
+          <a href="https://www.linkedin.com/in/elyes-man-ai/" title="LinkedIn">
+            <img src="images/icons/linkedin.png"  width="15%">
+          </a>
+          <a href="https://twitter.com/Elyes__Manai" title="Twitter">
+            <img src="images/icons/twitter.png"  width="15%">
+          </a>
+          <a href="https://www.youtube.com/channel/UC1Qckfmtl8gbeI2jlMiBz9Q" title="Youtube">
+            <img src="images/icons/youtube.png"  width="15%">
+          </a>
+          <a href="https://github.com/elyesmanai" title="Github">
+            <img src="images/icons/github.png"  width="15%">
+          </a>
+          <a href="https://medium.com/@manai.elyes" title="Medium">
+            <img src="images/icons/medium.png"  width="15%">
+          </a>
 
-        
-
-        
+        </p>
       </header>
       <section>
 
@@ -68,13 +88,16 @@
       </section>
       <footer>
         
-        <p>This project is maintained by <a href="https://github.com/elyesmanai">elyesmanai</a></p>
+        
         
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="assets/js/scale.fix.js"></script>
-    
+    <script>
+      talks_count = document.getElementsByTagName("ul")[0].childElementCount
+      document.getElementById("invited-talks").innerHTML = 'Invited Talks ('+talks_count+')'
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
