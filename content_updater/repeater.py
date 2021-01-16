@@ -7,10 +7,10 @@ with open('../index.html', 'r') as file :
     menu = re.search("(?is)<table[^>]*>(.*?)<\/table>", filedata)
 
 
-pages = ['talks','awards','research','teaching']
+pages = ['talks','awards','research','teaching','career', 'content']
 
 for page in pages:
-	for tag in [["header",header], ['menu',menu]]:
+	for tag in [["header",header], ['table',menu]]:
 
 		with open('../'+page+".html", 'r') as file :
 			current_page = file.read()
