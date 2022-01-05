@@ -25,3 +25,6 @@ Traversy Media
 Wesbos
 
 
+# apps
+Roboflow
+Dialogflow
