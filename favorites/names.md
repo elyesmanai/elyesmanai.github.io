@@ -10,22 +10,6 @@
 * alphago
 * Vue.js - Stanislav Petrov   
 
-# Games
-Earth Defense Force 4, 5, Iron Rain
-* Serious Sam 3, 4
-* Ace Combat 5,6,7
-* Resident Evil 3,4,5,6
-* Muv Luv Alternative
-* mecha knights nightmare
-* Persona 3,4
-* SMT 3
-* dead island, riptide
-* FF7 cerberus
-* Kingdom Hearts 1.5,2,DS,3
-* Bulletstorm
-* Crysis 1,2,3
-* Shadow Warrior 2
-
 # Anime
 * hellsing ultimate (alucard)
 * dragon ball z (broly)
@@ -44,6 +28,7 @@ Earth Defense Force 4, 5, Iron Rain
 * kengan ashura 
 * Overlord (ains)
 * school rumble
+* Ben-to
 
 # Manga 
 * Mx0
@@ -67,13 +52,3 @@ Earth Defense Force 4, 5, Iron Rain
 * all rounder
 * Tales of Demons and Gods
 * OMNISCIENT READER'S VIEWPOINT
-
-# Books
-* Dale Carnegie - How to win friends and influence people
-* The Millionaire mindset
-* Thinking, fast and slow 
-* Timothy Ferris - The 4 hour Workweek
-* Chip & Dan Heath - Switch, how to change things 
-* Dale Carengie - How to enjoy life and worry less 
-* Douglas Stone, Bruce Patton, Sheila Heen - Difficult conversations, How to discuss what matters most
-* Rich Dad Poor dad
