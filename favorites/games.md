@@ -23,6 +23,7 @@
 * Doom
 
 ### Other
+* Castlevania Series
 * Shadow Hearts
 * Bright Memory
 * Advance Wars
