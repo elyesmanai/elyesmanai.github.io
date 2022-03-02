@@ -9,7 +9,7 @@
 * World War Z
 * Dead Rising 2,3
 * House of the Dead Series
-* Zombie Army 3
+* Zombie Army Trilogy
 * Left for dead 2
 
 ### Monsters/Alien Apocalypse
@@ -20,8 +20,10 @@
 * Crysis 1,2,3
 * Devil May Cry 3,5
 * Silent Hill 0,2,3, Origins
+* Doom
 
 ### Other
+* Shadow Hearts
 * Bright Memory
 * Advance Wars
 * Life is Strange 
