@@ -4,6 +4,10 @@
 * Scott Pilgrim vs The world
 * ready player one
 * Starship Troopers 
+* John Wick Series
+* Resident Evil Films
+* Edge of Tomorow
+* All my friends are dead
 
 # Documentaries
 * all of ColdFusion TV's videos
