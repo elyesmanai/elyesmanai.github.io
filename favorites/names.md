@@ -8,6 +8,11 @@
 * Resident Evil Films
 * Edge of Tomorow
 * All my friends are dead
+* World War Z
+* Zombieland
+* 28 Days Later
+* Dawn of the dead
+* Train to Busan
 
 # Documentaries
 * all of ColdFusion TV's videos
