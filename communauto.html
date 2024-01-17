@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+    <script>
+        function calculatePriceFlex(minutes, km) {
+            const minuteRate = 0.35;
+            const hourlyRate = 12;
+            const dailyRate = 50;
+            const kmFree = 100;
+            const kmRate = 0.22;
+
+            let totalMinutes = minutes;
+            let totalKm = Math.max(0, km - kmFree);
+
+            let numberOfDays = Math.floor(minutes / (24 * 60));
+            let numberOfHours = Math.floor((minutes - numberOfDays * 24 * 60) / 60);
+            let numberOfMinutes = minutes - numberOfDays * 24 * 60 - numberOfHours * 60;
+
+            return (
+                numberOfMinutes * minuteRate +
+                numberOfHours * hourlyRate +
+                numberOfDays * dailyRate +
+                totalKm * kmRate
+            ).toFixed(2);
+        }
+
+        
+        function calculatePriceRoundTrip(minutes, km) {
+        const hourlyRate = 3.35;
+        const dailyRate = 26.8;
+        const kmRate1 = 0.43;
+        const kmRate2 = 0.32;
+
+        let totalMinutes = minutes;
+        
+        if km <=50:
+            km_rate = km * kmRate1
+        else:
+            km_rate = (50*kmRate1) + (km-50)*kmRate2
+            
+        let number_of_days = Math.floor(totalMinutes / (24 * 60))
+        let number_of_hours = Math.floor(totalMinutes - (number_of_days * 24 * 60))
+        let number_of_minutes = Math.floor(totalMinutes - (number_of_days * 24 * 60) - (number_of_hours * 60))
+        
+        if number_of_minutes <= 30:
+            let minutes_rate = 1.68
+        else if number_of_minutes <= 45:
+            let minutes_rate = 2.51
+        else:
+            let minutes_rate = 3.68
+
+        return (number_of_days * dailyRate + number_of_hours * hourlyRate 
+        + minutes_rate + km_rate).toFixed(2);
+    }
+
+        
+        function calculatePriceLongDistance(minutes, km) {
+            const minuteRate = 0.35;
+            const hourlyRate = 12;
+            const firstDailyRate = 36;
+            const additionalDayRate = 26;
+            const weeklyRate = 160;
+            const kmRate1 = 0.20;
+            const kmRate2 = 0.13;
+
+            if (km <= 30) {
+                return "30km or below, price is same as round trip"
+            } else {
+                let totalMinutes = minutes;
+                let totalKm = km;
+
+                let kmPrice;
+                if (km <= 300) {
+                    kmPrice = km * kmRate1;
+                } else {
+                    kmPrice = 300 * kmRate1 + (km - 300) * kmRate2;
+                }
+
+                let numberOfWeeks = Math.floor(totalMinutes / (7 * 24 * 60));
+                let remainingMinutes = totalMinutes % (7 * 24 * 60);
+
+                let number_of_days = Math.floor(remainingMinutes / (24 * 60));
+                remainingMinutes %= 24 * 60;
+
+                let number_of_hours = Math.floor(remainingMinutes / 60);
+                let number_of_minutes = remainingMinutes % 60;
+
+                let dayPrice = 0;
+                if (number_of_days === 1) {
+                    dayPrice = firstDailyRate;
+                } else if (number_of_days > 1) {
+                    dayPrice = firstDailyRate + (number_of_days - 1) * additionalDayRate;
+                }
+
+                return (
+                    number_of_minutes * minuteRate +
+                    number_of_hours * hourlyRate +
+                    dayPrice +
+                    numberOfWeeks * weeklyRate +
+                    kmPrice
+                ).toFixed(2);
+            }
+        }
+
+        function calculateAndDisplay() {
+            var minutes = parseInt(document.getElementById('minutes').value);
+            var km = parseInt(document.getElementById('km').value);
+
+            var flexPrice = calculatePriceFlex(minutes, km);
+            var roundTripPrice = calculatePriceRoundTrip(minutes, km);
+            var longDistancePrice = calculatePriceLongDistance(minutes, km);
+
+            document.getElementById('flexPrice').innerHTML = 'Flex Price: ' + flexPrice;
+            document.getElementById('roundTripPrice').innerHTML = 'Round Trip Price: ' + roundTripPrice;
+            document.getElementById('longDistancePrice').innerHTML = 'Long Distance Price: ' + longDistancePrice;
+        }
+    </script>
+</head>
+<body>
+    <h1>Price Calculator</h1>
+    <form>
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" name="minutes" required>
+
+        <label for="km">Kilometers:</label>
+        <input type="number" id="km" name="km" required>
+
+        <button type="button" onclick="calculateAndDisplay()">Calculate</button>
+    </form>
+
+    <h2>Results:</h2>
+    <p id="flexPrice"></p>
+    <p id="roundTripPrice"></p>
+    <p id="longDistancePrice"></p>
+</body>
+</html>
