@@ -36,21 +36,16 @@
 
         let totalMinutes = minutes;
         
-        if km <=50:
-            km_rate = km * kmRate1
-        else:
-            km_rate = (50*kmRate1) + (km-50)*kmRate2
+        if (km <= 50) {km_rate = km * kmRate1}
+        else{km_rate = (50*kmRate1) + (km-50)*kmRate2}
             
         let number_of_days = Math.floor(totalMinutes / (24 * 60))
         let number_of_hours = Math.floor(totalMinutes - (number_of_days * 24 * 60))
         let number_of_minutes = Math.floor(totalMinutes - (number_of_days * 24 * 60) - (number_of_hours * 60))
-        
-        if number_of_minutes <= 30:
-            let minutes_rate = 1.68
-        else if number_of_minutes <= 45:
-            let minutes_rate = 2.51
-        else:
-            let minutes_rate = 3.68
+        let minutes_rate = 0
+        if (number_of_minutes <= 30){minutes_rate = 1.68}
+        else if (number_of_minutes <= 45){minutes_rate = 2.51}
+        else {minutes_rate = 3.68}
 
         return (number_of_days * dailyRate + number_of_hours * hourlyRate 
         + minutes_rate + km_rate).toFixed(2);
@@ -104,7 +99,6 @@
                 ).toFixed(2);
             }
         }
-
         function calculateAndDisplay() {
             var minutes = parseInt(document.getElementById('minutes').value);
             var km = parseInt(document.getElementById('km').value);
